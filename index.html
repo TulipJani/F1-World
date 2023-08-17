@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the world of F1</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" media="(max-width: 786px)" href="styles/phone.css">
+    <link rel="website icon" type="png" href="Images/formula.png" />
+    
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-wrapper">
+      <a href="index.html">
+        <img src="Images/F1.svg.png" alt="F1 Logo" class="F1_logo">
+      </a>
+      <h1>WELCOME TO THE WORLD OF <b>F1</b></h1>
+    </div>
+  
+    
+
+    <!-- Hamburger menu button -->
+    <div class="hamburger-menu" onclick="toggleNavbar()">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
+</header>
+  
+<nav class="navbar-nav" id="navbar">
+    <div class="navbar">
+      <a href="index.html" class="active activeNav hover-underline-animation">Start F1 World</a>
+      <a href="knowyrracers.html" class="hover-underline-animation">Unveiling F1 Legends</a>
+      <!-- <a href="articles.html" class="hover-underline-animation">Insights & Features</a> -->
+      <a href="galllery.html" class="hover-underline-animation">Visual Spectaculars</a>
+      <!-- <a href="our-story.html" class="exo hover-underline-animation">Discover Our Story</a> -->
+      <a href="contactus.html" class="hover-underline-animation">Connect with Us</a>
+      <a href="https://media.giphy.com/media/TluN63Wgq3ivIqpeqa/giphy-downsized-large.gif" class="hover-underline-animation">Haan, Yehh maine hi banai hai- t:)</a>
+    </div>
+</nav>
+
+
+    
+    
+
+    <section class="featured-articles">
+      <div class="article">
+        <img src="Images/f1card1.jpg" alt="Article 1 Image">
+        <h2>Unleashing Speed: The Thrilling World of Formula One Racing</h2>
+        <p>Explore the high-speed world of Formula One racing and discover the adrenaline-pumping excitement, cutting-edge technology, and fierce competition that make it one of the most thrilling sports on the planet.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="article">
+        <img src="Images/f1card2.jpg" alt="Article 2 Image">
+        <h2>Unforgettable Moments: Iconic Races in Formula One History</h2>
+        <p>Take a trip down memory lane as we revisit some of the most iconic races in Formula One history. From nail-biting duels to unexpected comebacks, these races have shaped the sport and left fans captivated for decades.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="article">
+        <img src="Images/f1card3.jpg" alt="Article 3 Image">
+        <h2>Driving Legends: The Greatest Formula One Drivers of All Time</h2>
+        <p>Delve into the world of Formula One legends and discover the remarkable stories of the greatest drivers to have graced the sport. From Ayrton Senna's unmatched skill to Michael Schumacher's record-breaking success, we celebrate their remarkable contributions to Formula One.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </section>
+   
+    
+    
+          
+        
+        
+        <h1 class="headlines-text">HEADLINES</h1>
+        <p class="headlines-info">Read all about it</p>
+        <section class="headlines">
+          <div class="container">
+            <img src="Images/lewis wakanda pose.jpeg" alt="">
+            <div class="contain-text"><h3>LEWIS HAMILTON</h3>
+            <h6>Lewis Hamilton dedicates his pole position to Chadwick Boseman</h6></div>
+          </div>
+    
+          <div class="container second-img">
+            <img src="Images/saluting car.jpg" alt="">
+            <div class="contain-text"><h3>SEBASTIAN VETTEL</h3>
+            <h6>A four time champion in photos</h6></div>
+          </div>
+    
+          <div class="container">
+            <img src="Images/monaco grandprix.jpg" alt="">
+            <div class="contain-text"><h3>MAX VERSTAPPEN</h3>
+            <h6>Max Verstappen wins Monaco Grand Prix 2023</h6></div>
+          </div>
+          
+        </section>
+        
+
+     <section class="about-us">
+      <div class="container">
+        <div class="text-container">
+          <h1>Something about us!</h1>
+          <p>Welcome to our F1 blog, a hub for motorsport enthusiasts! At F1 World, we deliver the latest news, analysis, and captivating stories from the world of Formula 1. Our dedicated team of writers brings you the thrill of every race, behind-the-scenes insights, and interviews with drivers and teams. Join us as we explore the high-speed world of F1, celebrating engineering marvels, fierce competition, and unforgettable moments. Get ready for an adrenaline-fueled journey with us!</p>
+        </div>
+        <div class="img-container">
+          <img src="Images/about-us.jpg" alt="About Us Image">        
+        </div>
+      </div>
+    </section>
+    
+    
+        
+    
+    <section class="subscribe">
+      <h1>Subscribe Form</h1>
+      <div class="input-btn">
+        <i class="fas fa-envelope"></i>
+        <input type="text" id="email" placeholder="email@example.com" required>
+        <button class="btn" onclick="subscribe()">JOIN</button>
+      </div>
+    </section>
+    
+    
+    
+    <footer>
+      <p>www.f1world.blog <br>
+      &copy; by F1 World</p>
+    
+    </footer>
+    
+</body>
+
+<script src="script.js/app.js"></script>
+
+<script>
+  function toggleNavbar() {
+    const navbar = document.getElementById("navbar");
+    const hamburger = document.querySelector(".hamburger-menu");
+    navbar.classList.toggle("show");
+    hamburger.classList.toggle("active");
+  }
+</script>
+
+<script>
+  function subscribe() {
+    const email = document.getElementById('email').value;
+    
+    // Perform validation here (optional)
+    
+    // Send the email to the backend
+    fetch('subscribe.php', {
+      method: 'POST',
+      body: JSON.stringify({ email: email }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        alert('Subscribed successfully!');
+      } else {
+        alert('Subscription failed. Please try again.');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('An error occurred. Please try again later.');
+    });
+  }
+</script>
+
+    
+</body>
+</html>
