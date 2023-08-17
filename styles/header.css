@@ -1,0 +1,155 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  z-index: 999999;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  color: white;
+  padding: 20px;
+    z-index: 999999;
+
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.F1_logo {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  color: red;
+}
+
+
+/* Navbar styles */
+.navbar-nav {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 25, 25, 1);
+    z-index: 999999;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  max-height: 1px;
+  opacity: 1;
+  visibility: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s;
+    z-index: 999999;
+
+}
+
+.show .navbar {
+  max-height: 200px; /* Adjust the value as needed */
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar a {
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+/* Hover underline animation */
+.hover-underline-animation {
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  /* top: 20px; */
+  /* right: 20px; */
+  z-index: 1000;
+}
+
+.line {
+  width: 30px;
+  border-radius: 50px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: transform 0.3s;
+}
+
+.activeNav{
+  background-color: rgba(139, 0, 0, 0.25);
+}
+.activeNav::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+
+/* Cross icon styles */
+.active .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.active .line2 {
+  opacity: 0;
+}
+
+.active .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+  
+footer p {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
