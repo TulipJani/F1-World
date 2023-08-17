@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the world of F1</title>
+    <link rel="website icon" type="png" href="Images/formula.png" />
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="styles/phone.css">
+    
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-wrapper">
+      <a href="index.html">
+        <img src="./Images/F1.svg.png" alt="F1 Logo" class="F1_logo">
+      </a>
+      <h1>WELCOME TO THE WORLD OF <b>F1</b></h1>
+    </div>
+  
+    
+
+    <!-- Hamburger menu button -->
+    <div class="hamburger-menu" onclick="toggleNavbar()">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
+</header>
+  
+<nav class="navbar-nav" id="navbar">
+    <div class="navbar">
+      <a href="index.html" class="active hover-underline-animation">Start F1 World</a>
+      <a href="knowyrracers.html" class="hover-underline-animation">Unveiling F1 Legends</a>
+      <!-- <a href="articles.html" class="hover-underline-animation">Insights & Features</a> -->
+      <a href="galllery.html" class="hover-underline-animation">Visual Spectaculars</a>
+      <!-- <a href="our-story.html" class="exo hover-underline-animation">Discover Our Story</a> -->
+      <a href="contactus.html" class="activeNav hover-underline-animation">Connect with Us</a>
+    </div>
+</nav>
+
+
+<div class="container">
+  <div class="contact-box">
+    <div class="left"></div>
+    <div class="right">
+      <h2>Contact Us</h2>
+      <input type="text" class="field" placeholder="Your Name">
+      <input type="text" class="field" placeholder="Your Email">
+      <input type="text" class="field" placeholder="Phone">
+      <textarea placeholder="Message" class="field"></textarea>
+      <button class="btn">Send</button>
+    </div>
+  </div>
+</div>
+    <footer>
+      <p>www.f1world.blog <br>
+      &copy; by F1 World</p>
+    
+    </footer>
+    
+</body>
+
+<script src="script.js/app.js"></script>
+    
+<script>
+  function toggleNavbar() {
+    const navbar = document.getElementById("navbar");
+    const hamburger = document.querySelector(".hamburger-menu");
+    navbar.classList.toggle("show");
+    hamburger.classList.toggle("active");
+  }
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+  }
+  
+  body {
+	height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+  }
+  
+  .container {
+	position: relative;
+	width: 100%;
+	height: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+  }
+  
+  .container:after {
+	content: '';
+	position: absolute;
+	width: 115%;
+    height: 120%;
+    left: -30px;
+    top: -30px;
+	background: url("Images/contact.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(10px);
+	z-index: -2;
+  }
+  
+  
+  .contact-box {
+	max-width: 800px;
+	display: grid;
+	grid-template-columns: 1fr;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+	border-radius: 75px;
+  }
+  
+  .left {
+	background: url("Images/Car__1_.jpg") no-repeat center;
+	background-size: cover;
+	height: 300px;
+  }
+  
+  .right {
+	padding: 25px 40px;
+  }
+  
+  h2 {
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: #333;
+  }
+  
+  h2:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	height: 4px;
+	width: 50px;
+	border-radius: 2px;
+	background-color: #f66;
+  }
+  
+  .field {
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 1);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 15px;
+	border-radius: 50px;
+	transition:all .5s ease-in-out;
+
+  }
+  
+  textarea {
+	min-height: 150px;
+	background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn {
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #f66;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	border-radius: 50px;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+  }
+  
+  .btn:hover {
+	border: 1px solid #f66;
+	background-color: transparent;
+	color: #e44;
+	font-weight: 600;
+  }
+  
+  .field:focus {
+	border: 2px solid rgba(255, 102, 102, 0.8);
+	background-color: #fff;
+	border-radius: 0px;
+
+  }
+  
+  @media screen and (min-width: 768px) {
+	.contact-box {
+	  grid-template-columns: 1fr 1fr;
+	}
+	
+}
+  
+  @media screen and (min-width: 1024px) {
+	.left {
+	  height: 100%;
+	}
+	
+  }
+
+  
+  
+
+footer{
+	text-align: center;
+	margin-top: 60px;
+	padding: 75px;
+	color: black;
+	z-index: 999;
+}
